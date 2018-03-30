@@ -1,0 +1,16 @@
+<launch>
+	<param name="world_frame" value="odom" />
+
+	<include file="$(find cvg_sim_gazebo)/launch/ardrone_testworld.launch"/>
+	<include file="$(find ardrone_joy)/launch/ardrone_joy.launch"/>
+
+	<arg name="rvizconfig_marker" default="$(find map_building)/rviz/ardrone.rviz" />
+	<node name="rviz_marker" pkg="rviz" type="rviz" args="-d $(arg rvizconfig_marker)" required="true" />
+
+	<arg name="rvizconfig_occ_grid" default="$(find map_building)/rviz/edumip_occ_grid.rviz" />
+	<node name="rviz_occ_grid" pkg="rviz" type="rviz" args="-d $(arg rvizconfig_occ_grid)" required="true" />
+
+
+	<node name="make_wall" type="make_wall" pkg="map_building" output="screen"/>
+	<node type="static_transform_publisher" name="map_to_nav" pkg="tf2_ros" args="0.0 0.0 -0.0 0 0 0 map nav"/>
+</launch>

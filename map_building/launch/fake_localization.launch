@@ -1,0 +1,51 @@
+<launch>
+	<!--include file="$(find edumip_my_robot_gazebo_ros)/launch/edumip_my_robot_gazebo.launch"/-->
+
+	<node name="fake_localization" pkg="fake_localization" type="fake_localization" output="screen">
+		<param name="use_map_topic" value="true"/>
+		<param name="odom_frame_id" value="map" />
+		<param name="base_frame_id" value="edumip_body"/>
+		<remap from="/base_pose_ground_truth" to="edumip/odom" />
+	</node>
+	<!--node name="pubforlocal" type="pubforlocal" pkg="map_building"/--> 
+	
+	<!--node name="amcl" type="amcl" pkg="amcl" output="screen">
+	</node-->
+
+
+
+	<arg name="odom_frame_id"   default="world"/>
+    <arg name="base_frame_id"   default="edumip_body"/>
+	<arg name="global_frame_id" default="map"/>
+	<arg name="odom_topic" default="/edumip/odom" />
+
+	<node name="move_base" pkg="move_base" type="move_base" respawn="false" output="screen">
+		<!--remap from="odom" to="/edumip/odom"/-->
+		<rosparam file="$(find map_building)/params/local_costmap.yaml" command="load"/>
+		<rosparam file="$(find map_building)/params/global_costmap.yaml" command="load"/>
+		<rosparam file="$(find map_building)/params/edumip_params.yaml" command="load"/>
+		<param name="recovery_behavior_allowed" value="true"/>
+		<param name="clearing_rotation_allowed" value="true"/>
+		<remap from="cmd_vel" to="edumip/cmd"/>
+	</node>
+
+	
+	
+    
+
+	
+	<!--node type="static_transform_publisher" name="base_to_world" pkg="tf2_ros" args="0.0 0.0 0.0 0.0 0.0 0.0 edumip_body map"/-->
+	<!--include file="$(find joy_twist)/launch/joy_twist.launch"/-->
+	<!--node name="mapper1" pkg="map_building" type="pub_for_local"/-->
+	<node name="mapper" pkg="map_building" type="edumip_to_odom"/>
+	<node name="map_server" pkg="map_server" type="map_server" args="$(find map_building)/edumip_occ_grid.yaml"/>
+	<!--node type="static_transform_publisher" name="map_to_world" pkg="tf2_ros" args="0.0 0.0 0.0 0.0 0.0 0.0 map world"/-->
+	<!--node pkg="tf" type="static_transform_publisher" name="link1_broadcaster" args="1 0 0 0 0 0 1 map world 1000" /-->
+
+	<node type="rviz" name="rviz" pkg="rviz"/>
+
+
+
+
+
+</launch>

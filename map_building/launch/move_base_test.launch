@@ -1,0 +1,14 @@
+<launch>
+	<include file="$(find edumip_my_robot_gazebo_ros)/launch/edumip_my_robot_gazebo.launch"/> 
+	<node name="move_base" pkg="move_base" type="move_base" output="screen">
+		<remap from="odom" to="/edumip/odom"/>
+		<rosparam file="$(find map_building)/params/local_costmap.yaml" command="load"/>
+		<rosparam file="$(find map_building)/params/global_costmap.yaml" command="load"/>
+		<rosparam file="$(find map_building)/params/edumip_params.yaml" command="load"/>
+	</node>
+	<node name="map_server" pkg="map_server" type="map_server" args="$(find map_building)/edumip_occ_grid.yaml"/>
+	<node type="static_transform_publisher" name="map_to_world" pkg="tf2_ros" args="1.0 1.0 0.0 0.0 0.0 0.0 map world"/>
+	<node type="static_transform_publisher" name="base_to_world" pkg="tf2_ros" args="0.0 0.0 0.0 0.0 0.0 0.0 edumip_base map"/>
+	<include file="$(find joy_twist)/launch/joy_twist_launch.launch"/>
+	<node type="rviz" name="rviz" pkg="rviz"/>
+</launch>

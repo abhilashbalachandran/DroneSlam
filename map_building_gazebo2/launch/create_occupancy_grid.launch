@@ -1,0 +1,7 @@
+<launch>
+	<arg name="rvizconfig" default="$(find map_building)/rviz/occupancy_grid_example.rviz" />
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true" />
+
+	<node name="occupancy_grid_example" type="create_occupancy_grid" pkg="map_building" output="screen"/>
+	<node type="static_transform_publisher" name="map_to_nav" pkg="tf2_ros" args="0.0 0.0 -0.0 0 0 0 map base_link"/>
+</launch>

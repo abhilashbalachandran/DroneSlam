@@ -1,0 +1,128 @@
+[ INFO] [1494720968.916041888]: world_frame is odom
+[ INFO] [1494720968.923421197]: Subscribing to info topic
+[ INFO] [1494720968.924105692]: Subscribing to info topic
+[ INFO] [1494720969.011600645]: AR tracker reconfigured: ENABLED 8.00 20.00 0.08 0.20
+[ INFO] [1494720969.015827597]: AR tracker reconfigured: ENABLED 8.00 20.00 0.08 0.20
+
+Setting camera channel to : 1.
+[ INFO] [1494720990.881673478]: CAM TOGGLE CALLED
+[ INFO] [1494720990.881962520]: status = 1
+[ INFO] [1494720999.555614874]: Adding base frame 2
+[ INFO] [1494720999.556009854]: Origin value for one tf =0.000000,0.000000,0.000000
+[ INFO] [1494720999.556241983]: rotation value for one tf = 0.000000,0.000000,0.000000,1.000000
+
+Setting camera channel to : 0.
+[ INFO] [1494721008.462660632]: CAM TOGGLE CALLED
+[ INFO] [1494721008.463857163]: status = 0
+[ INFO] [1494721008.764910453]: biggest element  = 0.979020 at position 0
+the A MATRIX =0 0 1
+0 1 0
+1 0 0
+[ INFO] [1494721008.765083024]: roll = -3.141593, pitch = -1.570796, yaw = 0.000000
+[ INFO] [1494721008.765118608]: origin before rounding = 1.447230 -0.423512 1.602173
+[ INFO] [1494721008.765143876]: r = -1.570000, p = 0.000000, y = 0.000000
+[ INFO] [1494721008.765164473]: origin after rounding = 1.447230 -0.423512 1.602173
+[ INFO] [1494721008.765208046]: Adding new frame : frame id 0
+[ INFO] [1494721008.765228024]: Origin value for one tf =1.447230,-0.423512,1.602173
+[ INFO] [1494721008.765245020]: rotation value for one tf = 0.707107,0.000000,0.707107,-0.000000
+[ INFO] [1494721008.841222657]: frame 0 has z=0. Adding to grid....
+
+Setting camera channel to : 1.
+[ INFO] [1494721009.882886927]: CAM TOGGLE CALLED
+[ INFO] [1494721009.883105752]: status = 1
+
+Setting camera channel to : 0.
+[ INFO] [1494721022.541649384]: CAM TOGGLE CALLED
+[ INFO] [1494721022.542071845]: status = 0
+[ INFO] [1494721022.843173008]: biggest element  = 0.946213 at position 1
+the A MATRIX =0 1 0
+0 0 1
+1 0 0
+[ INFO] [1494721022.843406049]: roll = -1.570796, pitch = -1.570796, yaw = 0.000000
+[ INFO] [1494721022.843451104]: origin before rounding = 0.966192 3.714512 1.055884
+[ INFO] [1494721022.843486514]: r = -1.570000, p = 0.000000, y = 0.000000
+[ INFO] [1494721022.843514900]: origin after rounding = 0.966192 3.714512 1.055884
+[ INFO] [1494721022.843563796]: Adding new frame : frame id 13
+[ INFO] [1494721022.843595286]: Origin value for one tf =0.966192,3.714512,1.055884
+[ INFO] [1494721022.843619505]: rotation value for one tf = -0.500000,-0.500000,-0.500000,0.500000
+[ INFO] [1494721022.843764508]: intersection point in plane 0 = 1.447230,3.714512
+[ INFO] [1494721022.843800210]: intersection point in plane 1 = -1.602173,-4.138024
+[ INFO] [1494721022.843838654]: intersection point in plane 2 = -1.055884,0.481038
+[ INFO] [1494721022.843951050]: intersection point in plane 0 = -1.602173,-4.138024
+[ INFO] [1494721022.843979720]: intersection point in plane 1 = 1.447230,3.714512
+[ INFO] [1494721022.844006282]: intersection point in plane 2 = -1.055884,0.481038
+[ INFO] [1494721022.918428059]: frame 0 has z=0. Adding to grid....
+
+Setting camera channel to : 1.
+[ INFO] [1494721023.841580024]: CAM TOGGLE CALLED
+[ INFO] [1494721023.841753924]: status = 1
+
+Setting camera channel to : 0.
+[ INFO] [1494721032.682523349]: CAM TOGGLE CALLED
+[ INFO] [1494721032.683516395]: status = 0
+[ INFO] [1494721032.985569389]: biggest element  = 0.928709 at position 0
+the A MATRIX =0 0 1
+0 1 0
+1 0 0
+[ INFO] [1494721032.985900533]: roll = -3.141593, pitch = -1.570796, yaw = 0.000000
+[ INFO] [1494721032.985989716]: origin before rounding = -1.692466 0.392345 0.661954
+[ INFO] [1494721032.986046194]: r = -1.570000, p = 0.000000, y = 0.000000
+[ INFO] [1494721032.986096199]: origin after rounding = -1.692466 0.392345 0.661954
+[ INFO] [1494721032.986169209]: Adding new frame : frame id 7
+[ INFO] [1494721032.986221071]: Origin value for one tf =-1.692466,0.392345,0.661954
+[ INFO] [1494721032.986269565]: rotation value for one tf = 0.707107,0.000000,0.707107,-0.000000
+[ INFO] [1494721032.986529279]: intersection point in plane 0 = -1.692466,3.714512
+[ INFO] [1494721032.986584732]: intersection point in plane 1 = -1.055884,-2.658658
+[ INFO] [1494721032.986642997]: intersection point in plane 2 = -0.661954,-3.322166
+[ INFO] [1494721032.987281540]: intersection point in plane 0 = -1.055884,-2.658658
+[ INFO] [1494721032.987344950]: intersection point in plane 1 = -1.692466,3.714512
+[ INFO] [1494721032.987379699]: intersection point in plane 2 = -0.661954,-3.322166
+[ INFO] [1494721033.143457113]: frame 0 has z=0. Adding to grid....
+
+Setting camera channel to : 1.
+[ INFO] [1494721034.082969777]: CAM TOGGLE CALLED
+[ INFO] [1494721034.083248445]: status = 1
+
+Setting camera channel to : 0.
+[ INFO] [1494721049.463835431]: CAM TOGGLE CALLED
+[ INFO] [1494721049.464504874]: status = 0
+[ INFO] [1494721049.771473487]: biggest element  = 0.992007 at position 1
+the A MATRIX =1 0 0
+0 0 1
+0 1 0
+[ INFO] [1494721049.772088857]: roll = 1.570796, pitch = -0.000000, yaw = 0.000000
+[ INFO] [1494721049.772213687]: origin before rounding = -0.376514 -2.736211 1.302497
+[ INFO] [1494721049.772312026]: r = -1.570000, p = 0.000000, y = 0.000000
+[ INFO] [1494721049.772401734]: origin after rounding = -0.376514 -2.736211 1.302497
+[ INFO] [1494721049.772552532]: Adding new frame : frame id 8
+[ INFO] [1494721049.772660972]: Origin value for one tf =-0.376514,-2.736211,1.302497
+[ INFO] [1494721049.772750872]: rotation value for one tf = 0.707107,0.000000,0.000000,0.707107
+[ INFO] [1494721049.773217460]: intersection point in plane 0 = 1.447230,-2.736211
+[ INFO] [1494721049.773318475]: intersection point in plane 1 = -1.602173,2.312699
+[ INFO] [1494721049.775007900]: intersection point in plane 2 = 1.823744,-1.302497
+[ INFO] [1494721049.778211125]: intersection point in plane 0 = -1.692466,-2.736211
+[ INFO] [1494721049.779384255]: intersection point in plane 1 = -0.661954,3.128556
+[ INFO] [1494721049.779495595]: intersection point in plane 2 = -1.315952,-1.302497
+[ INFO] [1494721049.779780371]: intersection point in plane 0 = -1.602173,2.312699
+[ INFO] [1494721049.780305799]: intersection point in plane 1 = 1.447230,-2.736211
+[ INFO] [1494721049.780959781]: intersection point in plane 2 = 1.823744,-1.302497
+[ INFO] [1494721049.785604670]: intersection point in plane 0 = -0.661954,3.128556
+[ INFO] [1494721049.785762332]: intersection point in plane 1 = -1.692466,-2.736211
+[ INFO] [1494721049.785853933]: intersection point in plane 2 = -1.315952,-1.302497
+[ INFO] [1494721050.054798583]: frame 0 has z=0. Adding to grid....
+^C[map_to_nav-10] killing on exit
+[make_wall-9] killing on exit
+[ar_track_alvar_front-6] killing on exit
+[rviz_marker-7] killing on exit
+[rviz_occ_grid-8] killing on exit
+[turtle_joy-3] killing on exit
+[ardrone_driver-2] killing on exit
+[joy_twist-4] killing on exit
+[ar_track_alvar_bottom-5] killing on exit
+individualMarkersNoKinect: /usr/include/boost/thread/pthread/recursive_mutex.hpp:113: void boost::recursive_mutex::lock(): Assertion `!pthread_mutex_lock(&m)' failed.
+individualMarkersNoKinect: /usr/include/boost/thread/pthread/recursive_mutex.hpp:113: void boost::recursive_mutex::lock(): Assertion `!pthread_mutex_lock(&m)' failed.
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+

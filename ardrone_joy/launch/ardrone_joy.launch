@@ -1,0 +1,12 @@
+<launch>
+
+ <!-- joy node -->
+  <node pkg="joy" type="joy_node" name="turtle_joy" >
+   <param name="dev" type="string" value="/dev/input/js0" />
+  </node>
+ 
+  <node pkg="ardrone_joy" type="joy_ardrone" name="joy_twist" output="screen"/>
+
+<include file="$(find ar_track_alvar)/launch/ardrone_bottom_tracking.launch"/>
+<include file="$(find ar_track_alvar)/launch/ardrone_front_tracking.launch"/>
+</launch>
